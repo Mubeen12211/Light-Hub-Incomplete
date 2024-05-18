@@ -1,4 +1,11 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()local Window = OrionLib:MakeWindow({Name = "Light Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) local Tab = Window:MakeTab({ Name = "All Games", Icon = "rbxassetid://4483345998", PremiumOnly = false }) Tab:AddTextbox({ Name = "WalkSpeed", Default = "", TextDisappear = true, Callback = function(txt) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt end }) Tab:AddTextbox({ Name = "JumpPower", Default = "", TextDisappear = true, Callback = function(txt) game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt end })
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Light Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"}) 
+
+local Tab = Window:MakeTab({ Name = "All Games", Icon = "rbxassetid://4483345998", PremiumOnly = false }) 
+
+Tab:AddTextbox({ Name = "WalkSpeed", Default = "", TextDisappear = true, Callback = function(txt) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt end }) 
+Tab:AddTextbox({ Name = "JumpPower", Default = "", TextDisappear = true, Callback = function(txt) game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt end })
 
 local Tab = Window:MakeTab({
 Name = "Auto Level Up",
